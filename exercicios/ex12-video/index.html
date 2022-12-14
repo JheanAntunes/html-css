@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Vídeos em HTML5</title>
+</head>
+<body>
+    <h1>inserindo vídeos hospedado localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio Servidor</p>
+    <video width="200" poster="foto-perfil-guanabara.png"  controls> <!-- Poster seria tipo thamb, quando a pagina carregar vai apareer uma imagem dentro dela-->
+        <source src="midia/formatovideo.mp4" type="video/mp4">
+        <source src="midia/video-formato.mkv" type="video/mp4">
+        <source src="midia/jayrocancelamento.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeo.</p>
+        <!--Essa forma vai gastar muito dinheiro do cliente  com hospedagem-->
+    </video>
+    <h1>Inserindo vídeo do Youtube </h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/upuFhPekFaM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+
+
+
+</body>
+</html>

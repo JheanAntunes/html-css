@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to left,rgba(45, 255, 255, 0.904), rgba(44, 196, 196, 0.849),rgba(39, 128, 128, 0.89));
+}
+#principal{
+    color: brown;
+    text-decoration: underline;
+    background-color: cornflowerblue;
+    text-shadow: 1px 1px 2px;
+    text-align: center;
+   font-size: 18px;
+   font: Kaushan Script, arial, sans-serif;
+   font-weight: 400;
+   
+}
+h2#subtitulo1{
+    text-align: center;
+    text-shadow: 1px 1px 2px;
+    font-size: 17px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: deeppink;
+    background-color: beige;
+}
+h2{
+    color: rgba(167, 52, 243, 0.719);
+    text-decoration: underline;
+    background-color: rgb(87, 87, 87);
+}
+p#para1{
+    text-align: justify;
+    text-indent: 15px;
+    text-shadow: 1px 1px 2px;
+    text-align: justify right;
+    font-weight: 600;
+    font-style: normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: blue;
+}
+p.paragrafos{
+    color: black;
+    text-align: justify;
+    text-decoration: underline;
+    font-size: 15px;
+    text-indent: 5px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}

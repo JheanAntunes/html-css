@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinãmica</h1>
+    <p>Tente abrir esse  site em vários dispositivos diferentes ou simplesmente aumenta e diminua o tamanho do seu navegador</p>
+    
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+   </picture>
+   <h1>Reproduzindo aúdio em  html5</h1>
+   <p>Vamos aprender a reproduzir aúdio em HTML5</p>
+   <!--<audio src="midia/stan.mp3" controls autoplay></audio>
+    MP3 WAV  OGG  FORMA PARA FUNCIONA EM TODOS NAVEGADORES-->
+    <audio preload="metadata" controls>
+        <source src="midia/stan.mp3" type="audio/mpeg"> <!--Formato MP3-->
+        <source src="midia/stan.ogg" type="audio/OGG"> <!--Formato OGG-->
+        <source src="midia/stan.wav" type="audio/WAV"> <!--Formato WAV Não use, a forma wav é muito pesado-->
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio. <a href="midia/stan.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+        <!--Para funcionar em todos navegadores eu repito os 3 audios, mas com formatos diferentes-->
+    </audio>
+</body>
+</html>

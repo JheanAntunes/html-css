@@ -1,0 +1,145 @@
+@charset "UTF-8";
+body{
+   font-family: Arial, Helvetica, sans-serif; 
+    margin: 0px;
+    background: #03b9a1;
+}
+header{
+    background: #007566;
+    background-image: linear-gradient(to top,#007566, #03b9a1);
+    height: 235px;
+    padding-top: 2px;
+}
+header > h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+     
+}
+article#article1{   
+    text-shadow: 1px 1px black;
+    text-align: center;
+    margin-top: 39px;
+    color: rgba(228, 228, 228, 0.897);
+}
+nav{
+background-color: rgb(4, 61, 4) ;
+height: 34px; 
+padding-top: 10px;
+margin-top: 115px ;
+/*box-shadow: 1px 2px #00000096;*/
+
+
+}
+nav > a{
+    margin-left: 17px;
+    color: white;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 0px;
+    
+}
+/* Finalizado o cabeçalho!!! abaixo a parte principal [MAIN]*/
+main{
+    background-color: white;
+    margin-top: 44px;
+    margin-right: 200px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    box-shadow: 1px 1px #0000006b;
+    height: 1936px
+}
+.mascote{
+    color: #083832;
+    padding: 5px;
+    font-family: 'jhean', sans-serif;
+    font-size: 2.5em;
+    margin: 9px;
+}
+/*article > p
+   text-align: justify;
+    text-indent: 5px;
+    padding: 3px;
+}*/
+span{
+    color: green;
+}
+span.normais{
+    color: white;
+}
+#video{
+    border-width: 52px;
+    border-style: solid;
+    border-color: #40625e;
+    box-shadow: 1px 1px #00000085;
+    
+}
+p.paragrafos{
+    text-indent: 26px;
+    padding-left:10px ;
+    padding-right: 40px;
+    margin: 9px;
+}
+/* footer */
+footer{
+    background-color: white;  
+}
+#rodapearticle{
+    background: #45b3a4;
+    height: 35px;
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-left: 10px;
+    margin-top: 15px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: 0px 1px 3px #0000007d;
+    font-size: 18px;
+    color: white;
+}
+#rodapeart{
+    padding-right: 5px;
+    padding-left: 10px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 1px 3px #0000007d;
+}
+#divrodape{
+    background-color: #2cfac6;
+    padding-top: 20px;
+    padding-right: 5px;    
+    margin-top: -3px;
+    margin-right: -5px;
+    margin-left: -10px;
+    
+}
+div > p{
+    margin-top: 1px;
+    text-indent: 10px;
+}
+#footerfinal{
+    text-align: center;
+}
+aside > p {
+    text-indent: 50px;
+    margin-left: 30px;
+}
+/*footer#footerfinal{
+    background-color: rgba(51, 99, 51, 0.788);
+    margin-bottom: 15px ;
+    
+}
+/*footer > p{
+    height: 14px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    margin-top: 21px;
+    margin-bottom: 0px;
+    text-align: center;
+    
+}

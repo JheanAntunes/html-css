@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{ /*globais*/
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{ /* Bloco para criar variavel*/
+
+    --corfundo: #00ffff;
+    --cortitulos:#7fffd4;
+    --cormain:#46b4b4;
+
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --fonte-destaque: cursive, sans-serif;
+
+
+}
+body{
+    background-color: var(--corfundo);
+       
+}
+main{
+    background-color: var(--cormain);
+    margin-right: auto;
+    margin-left: auto;  /*Centralizando com right e left o [MAIN] */
+    min-height: 320px; /* a tela  dos celulares antigos*/
+    max-width: 840px; /* Eu preciso saber aonde a foto quebra para colocar a reso*/
+    
+}
+main > h1{
+    color: var(--cortitulos);
+    font-family: var(--fonte-destaque);
+    text-align: center;
+}
+main > img {
+    width: 100%; /*Width: 100% -> A largura da imagem que vai se adaptar a largura da tela, a imagem vai diminuir ou aumenta conforme a tela aumenta ou diminui*/
+}
+main > p {
+    color: var(--cortitulos);
+    text-indent: 20px;
+    padding-left: 5px;
+}

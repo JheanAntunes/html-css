@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus teste de Pseudo-classes</title>
+    <style>
+    div{
+        width: 200px;
+    }
+    div > p {
+        display: none;
+    }
+
+    div:hover > p#paragrafodiv{
+        
+        display: block;
+        background: yellow;
+        color: aqua;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 400px;
+        text-align: justify;
+        text-indent: 15px;
+        padding: 5px;
+    }
+    p.pratica::after{
+        content: 'jhean antunes lopes'; 
+        color: aqua;
+         font-size: 18px;
+         font-weight: bold;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+    p.pratica::before{
+        content: 'Não desista';
+        background-color: aqua;
+    }
+    a:link{
+        color: blue;
+        font-size: 18px;
+    }
+    a:visited{
+        color: pink;
+    }
+    a:active{
+        color: brown;
+    }
+    div#jhean{
+        height: 200px;
+        width: 200;
+        background: black;
+        color: white;
+       margin: auto;
+       padding: 5px;
+    }
+    div#jhean:hover{
+        background: aquamarine;
+        color: black;
+    }
+    div#jhean:active{
+        background: red;
+    }
+    div#jhean:hover > p{
+        display: none;
+    }
+    div#jhean:hover > p{
+        display: block;
+        text-align: justify;
+    }
+    </style>
+</head>
+<body>
+    <h1> Meus teste de Pseudo-classes</h1>
+    <p class="pratica">Praticando legal</p>
+    
+    <div>
+        <h2 id="sempre">sempre é bom praticar</h2>
+        <p id="paragrafodiv"> Continue praticando para ser tornar um desenvolvedor website muito bom</p>
+    </div>
+    <a  href="http://127.0.0.1:5500/exercicios/ex20/eupseudoclasse.html">Aprenda de graça</a>
+    <div id="jhean"> meus testes de active
+        <p> jhean</p>
+    </div>
+    
+</body>
+</html>

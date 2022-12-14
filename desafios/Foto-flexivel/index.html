@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foto flexivel</title>
+</head>
+<body>
+    <h1>Foto flexivel testando</h1>
+    <picture>
+        <source media="(max-width: 750px )" srcset="excluir/foto-pp.png" type="image/png"> <!--abaixo de 750 px vai executar a foto pequena-->
+        <source media="(max-width: 1050px )" srcset="excluir/foto-mm.png" type="image/png"> <!--entre 1050 e 750 vai executar a foto media-->
+        <img src="excluir/foto-gg.png" alt="foto-grande"> <!--Se for maior que 1050px vai executar a foto grande -->
+
+    </picture>
+
+
+</body>
+</html>

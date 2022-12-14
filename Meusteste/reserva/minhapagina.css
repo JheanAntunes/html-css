@@ -1,0 +1,81 @@
+@charset "UTF-8";
+body{
+ font-family: Arial, Helvetica, sans-serif;
+ font-style: normal;
+ font-weight: normal;
+background-color: gray;
+ margin: 0px;
+   
+}
+header{
+    background-attachment: fixed;
+    background-color: black ; 
+    height: 59px;
+    padding: 10px 10px 10px 10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(7, 7, 7);
+}
+a.links{
+    color: rgb(129, 129, 129) ;
+    border: 5px solid white;
+    text-decoration: none;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: rgb(88, 88, 88);
+    padding: 4px 4px 4px 6px;
+    font-size: 14px;
+    margin: 3px;
+    
+    
+
+}
+header > span{
+    background: aqua;
+    display: inline;
+    
+}
+a#avanzado{
+    background: black;
+    color: white;
+    font-size: 17px;
+    margin: auto auto auto 20px;
+    text-decoration: none;
+}
+nav {
+    
+    text-align: right;
+    height: auto;
+    width: auto;
+    
+}
+nav > #pesquisa{
+    padding: 5px;
+    font-size: 17px;
+}
+
+nav#navprincipal{
+    background-color: rgba(2, 2, 29, 0.815);
+    height: 50px;
+    text-align: center;
+    border-width: 15px;
+    border-style: groove;
+    border-color: blueviolet;
+    padding: 15px 5px 5px 5px;
+
+}
+a.linksprincipal{
+    margin: 10px 10px 5px 10px;
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+   
+    text-decoration: none;
+    
+}   
+article > img.imagens {  
+    display: block;
+    margin-left: auto; 
+    margin-right: auto
+    
+}
