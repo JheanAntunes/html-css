@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização de um elemento com position absolute</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        div#foraexterno > img{
+            background-color: #5197978c;
+            height: 100vh;
+            margin: 0px;
+
+        }
+        div#dentrointerno{
+           
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            bottom: 0%;
+            transform: translate(-50%,-50%);
+
+        }
+        img{
+              width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="foraexterno">
+        <img src="imagens/espaço.jpg" alt="espaço">
+        <div id="dentrointerno">
+            <img src="imagens/astronauta.png" alt="astronauta">
+
+        </div>
+    </div>
+</body>
+</html>

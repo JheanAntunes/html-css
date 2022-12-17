@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>alinhamento vertical</title>
+    <style>
+        section#container{
+            position: relative; /* O que está em fora, [externo] tenha position relative*/
+            height: 500px;
+            padding: 10px;
+            background-color: purple;
+        }
+        article#conteudo{
+            position: absolute; /* O que está dentro, [interno] tenha position absolute*/
+            height: 200px;
+            width: 400px;
+            background-color: yellow;
+
+            left: 50%;
+            top: 50%;
+
+            transform:translate(20px, 20px) /* se colocar na primeira posição +px quer dizer direita, agora se colocar -px quer dizer vai para esquerda... Segunda posição se colocar +px é para baixo agora se colocar -px é para cima*/
+        }
+    </style>
+</head>
+<body>
+    <section id="container">
+        <article id="conteudo">
+
+        </article>
+    </section>
+</body>
+</html>

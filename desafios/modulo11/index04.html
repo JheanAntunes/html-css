@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        #foraexterno{
+            height: 100vh;
+            background: black url('imagens/espaço.jpg') center center no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        #dentrointerno{
+            
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+           
+        }
+        img{
+           width: 100%;
+           max-width: 300px;
+            min-width: 100px;
+           
+        }
+    </style>
+</head>
+<body>
+    <section id="foraexterno">
+        <article id="dentrointerno">
+            <img src="imagens/astronauta.png" alt="astronauta">
+        </article>
+    </section>
+</body>
+</html>
