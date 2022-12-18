@@ -1,0 +1,70 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --fonte-padrao: Arial, sans-serif;
+}
+
+header{
+    background-color: black;
+    height: 200px;
+    position: relative;
+    box-shadow:0px 0px 4px black;
+    
+}
+
+header h1{
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: bolder;
+    text-shadow: 0px 0px 1px black;
+}
+
+nav a{
+    position: absolute;
+    top: 53%;
+    left: 50%;
+    transform: translate(-60%,+80%);
+    text-decoration: none;
+    color: white;
+    margin-right: 7%;  
+
+}
+
+nav a::before{  
+    content: 'Por ';
+  
+}
+
+nav a:hover{  
+    color: rgb(153, 245, 245); 
+    text-decoration: underline;
+    
+}
+
+nav a:active{
+    color:red;
+}
+
+main{
+    max-width: 800px;
+    min-width: 300px;
+    margin: auto;
+    background-color: aqua;
+   box-shadow:0px 0px 4px black;
+}
+
+p.paragrafos{   
+        
+        line-height: 40px;
+        text-indent: 20px;
+    
+}
