@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Open Sans', sans-serif;
+    --fonte3: 'Pacifico', cursive;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: var(--fonte1);
+    height: 100vh;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    
+}
+
+header nav {
+    padding-bottom: 50px;
+}
+
+nav > a{
+    color: white;
+    text-decoration: none;
+}
+
+nav > a::before{
+    content: 'Por ';
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+/*main{
+  font-family: var(--fonte1);  /*Não utilizar nessa web, mas coloquei ela no html para dizer que o que tem dentro é o conteudo principal
+  
+}*/
+
+section{
+    padding: 15vh 0px;
+    padding-left: 40px;
+    font-size: 1.5em;
+    line-height: 40px;
+    font-family: var(--fonte3);
+}
+
+section.normal{
+    background-color: antiquewhite;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.918);
+    
+}
+
+section.imagem{
+    color:black;
+    box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.651);
+}
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.249);
+    padding: 5px;
+    color: white;
+}
+section#img1{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section#img2{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+footer a{
+    color: white;
+
+}
+
+footer a:hover{
+    color: blue;
+    
+}

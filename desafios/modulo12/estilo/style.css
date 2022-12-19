@@ -91,7 +91,8 @@ p.paragrafos{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: scroll;
-    height: 500px;
+    height: 100vh;
+    background-attachment: fixed;
 }
 
 #textoimagem{
