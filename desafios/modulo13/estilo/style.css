@@ -5,7 +5,10 @@
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+body{
+    background-color: azure;
+    
+}
 :root{
     --fonte-padrao: Arial, sans-serif;
 }
@@ -58,13 +61,51 @@ main{
     max-width: 800px;
     min-width: 300px;
     margin: auto;
-    background-color: aqua;
+    background-color: transparent;
    box-shadow:0px 0px 4px black;
 }
 
+section#sectiontexto{
+    height: 300px;
+    position: relative;
+}
+
+article#artigos{
+    position: absolute;
+    transform: translate(0%,5%);
+
+}
+
 p.paragrafos{   
-        
+
         line-height: 40px;
-        text-indent: 20px;
+        text-indent: 40px;
+        color: black;
+        padding-right: 10px;
     
+}
+
+#imagemfundo{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    height: 500px;
+}
+
+#textoimagem{
+    position: absolute;
+    transform: translate(0%,20%);
+
+
+    background-color: rgba(0, 0, 0, 0.288);
+}
+.paragrafos1{   
+        
+    line-height: 40px;
+    text-indent: 40px;
+    color: white;
+    padding-right: 10px;
+
 }
