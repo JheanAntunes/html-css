@@ -1,0 +1,90 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+        
+    background-image: linear-gradient(to right, rgba(128, 128, 128, 0.685), rgba(202, 202, 199, 0.534));
+}
+
+header{
+    font-variant: small-caps;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: aquamarine;
+    background-image: url('../imagens/foto_principal1200.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: cover;
+    
+}
+
+header > h1{
+    text-align: center;
+    padding: 60px 0px;
+    color: rgb(211, 0, 0);
+    text-shadow: 1px 1px 1px black;
+    background-attachment: fixed;
+}
+
+section.imagem{
+    background-image: url('../imagens/foto_principal1200.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+section.imagem > p{
+    display: inline-block;
+    width: 200px;
+    font-size: 2vh;
+    line-height: 40px;
+    padding-left: 50px;
+    text-decoration: underline;
+    text-shadow: 0px 0px 1px black;
+
+}
+
+section.normal{
+    background-color: wheat;
+    background-image: url('../imagens/espaço.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+section.normal > p{
+    display: inline-block;
+    width: 200px;
+    font-size: 2vh;
+    line-height: 40px;
+    padding-left: 50px;
+    text-decoration: underline;
+    text-shadow: 0px 0px 1px black;
+}
+
+section.anormal{
+    background-color: wheat;
+    background-image: url('../imagens/foto_principal1200.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: white;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+section.anormal > p{
+    position: absolute;
+    left: 40%;
+    right: 40%;
+    transform: translate(20%,10%);
+}
