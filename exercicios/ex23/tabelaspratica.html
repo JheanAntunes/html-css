@@ -12,7 +12,9 @@
         
         table{
             width: 400;
+            height: 400px;
             border-collapse: collapse;
+            text-align: center;
         }
         
         tr.linha{
@@ -34,9 +36,29 @@
                 
         }
 
+        .dadotop{
+            vertical-align: top;
+        }
+
+        .dadobottom{
+            vertical-align: bottom;
+        }
+
+        .dadoleft{
+            text-align: left;
+            vertical-align: middle;
+        }
+
+        .dadomidle{
+            text-align: right;
+            vertical-align: middle;
+
+        }
+
         tr.mouse:hover{
             color: brown;
         }
+
     </style>
 </head>
 <body>
@@ -45,21 +67,21 @@
     <table>
         <tr class="linha">
             <td class="dado">Nomes:</td>
-           <td>Jhean antunes lopes</td>
+           <td class="dadoleft">Jhean antunes lopes</td>
         </tr>
 
         <tr class="linha">
             <td class="dado">Sobrenome:</td>
-            <td>Antunes lopes</td>
+            <td class="dadomidle">Antunes lopes</td>
         </tr>
 
         <tr class="mouse">
-            <td>GMAIL:</td>
-            <td>brizadaojhean@gmailcom</td>
+            <td class="dadobottom">GMAIL:</td>
+            <td class="dadobottom">brizadaojhean@gmailcom</td>
         </tr>
         <tr class="mouse">
-            <td id="idados">idade:</td>
-            <td>20</td>
+            <td id="idados" class="dadotop">idade:</td>
+            <td class="dadotop">20</td>
         </tr>
     </table>
     
