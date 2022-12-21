@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Praticas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 400;
+            border-collapse: collapse;
+        }
+        
+        tr.linha{
+            background-color: aqua;
+        }    
+        
+        td{
+            border: 1px solid black;
+            padding: 8px
+        }
+
+        td.dado{
+            color:blue;
+            
+        }
+
+        td#idados{
+                color: aquamarine;
+                
+        }
+
+        tr.mouse:hover{
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus Teste de Tabelas</h1>
+    <h2>Tabelas Simples</h2>
+    <table>
+        <tr class="linha">
+            <td class="dado">Nomes:</td>
+           <td>Jhean antunes lopes</td>
+        </tr>
+
+        <tr class="linha">
+            <td class="dado">Sobrenome:</td>
+            <td>Antunes lopes</td>
+        </tr>
+
+        <tr class="mouse">
+            <td>GMAIL:</td>
+            <td>brizadaojhean@gmailcom</td>
+        </tr>
+        <tr class="mouse">
+            <td id="idados">idade:</td>
+            <td>20</td>
+        </tr>
+    </table>
+    
+</body>
+</html>
