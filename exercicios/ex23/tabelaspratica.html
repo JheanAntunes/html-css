@@ -12,7 +12,7 @@
         
         table{
             width: 400;
-            height: 400px;
+            
             border-collapse: collapse;
             text-align: center;
         }
@@ -21,7 +21,7 @@
             background-color: aqua;
         }    
         
-        td{
+        td,th{
             border: 1px solid black;
             padding: 8px
         }
@@ -59,30 +59,42 @@
             color: brown;
         }
 
+        thead{
+            background-color: dimgrey;
+            color: white;
+        }
+
     </style>
 </head>
 <body>
     <h1>Meus Teste de Tabelas</h1>
     <h2>Tabelas Simples</h2>
     <table>
-        <tr class="linha">
-            <td class="dado">Nomes:</td>
-           <td class="dadoleft">Jhean antunes lopes</td>
-        </tr>
-
-        <tr class="linha">
-            <td class="dado">Sobrenome:</td>
-            <td class="dadomidle">Antunes lopes</td>
-        </tr>
-
-        <tr class="mouse">
-            <td class="dadobottom">GMAIL:</td>
-            <td class="dadobottom">brizadaojhean@gmailcom</td>
-        </tr>
-        <tr class="mouse">
-            <td id="idados" class="dadotop">idade:</td>
-            <td class="dadotop">20</td>
-        </tr>
+        <thead>
+            <tr>
+                <th>Nomes</th>
+                <th>idade</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="linha">
+                
+               <td class="dadoleft">Jhean antunes lopes</td>
+               <td>20 anos</td>
+            </tr>
+            <tr class="linha">
+                <td class="dado">Sobrenome:</td>
+                <td class="dadomidle">Antunes lopes</td>
+            </tr>
+            <tr class="mouse">
+                <td class="dadobottom">GMAIL:</td>
+                <td class="dadobottom">brizadaojhean@gmailcom</td>
+            </tr>
+            <tr class="mouse">
+                <td id="idados" class="dadotop">idade:</td>
+                <td class="dadotop">20</td>
+            </tr>
+        </tbody>
     </table>
     
 </body>
