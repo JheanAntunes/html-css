@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de tabela</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 300px;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        
+        td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+        td.aqua{
+            background-color: aquamarine;
+        }
+        
+        td.aqua:hover{
+            background-color: aqua;
+        }
+
+        td.yellow{
+            background-color: yellow;
+        }
+
+        td.red{
+            background-color: red;
+        }
+    
+        
+    </style>
+
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="aqua">1</td>
+            <td class="aqua">2</td>
+            <td class="aqua" rowspan="2">3</td>
+            <td class="aqua">4</td>
+        </tr>
+    
+        <tr>
+            <td class="yellow">5</td>
+            <td class="yellow">6</td>
+            <td class="yellow">7</td>
+        </tr>
+        
+        <tr>
+            <td colspan="3">8</td>
+            <td>9</td>
+        </tr>
+
+        <tr>
+            <td rowspan="2">10</td>
+            <td colspan="2">11</td>
+            <td>12</td>
+        </tr>
+
+        <tr>
+            <td class="red">13</td>
+            <td class="red">14</td>
+            <td class="red">15</td>
+        </tr>
+
+    </table>
+</body>
+</html>
