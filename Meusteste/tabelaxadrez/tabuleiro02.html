@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuleiro parte 2</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 600px;
+            border-collapse: collapse;
+
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 35px 2px;
+        }
+
+        tr.linha >  td:nth-child(even){
+            background-color: black;
+        }
+
+        
+
+        tr.linha2 > td:nth-child(odd){
+            background-color: black;
+        }
+
+        tr#alfabetica{
+            text-align: center;
+            
+        }
+        tr#alfabetica > td{
+            text-align: center;
+            padding: 0px;
+            border: 0px;
+            
+        }
+    </style>
+
+</head>
+<body>
+    <p>
+        &nbsp;
+    </p>
+    <table>
+        <tbody>
+            <tr class="linha">
+                <th>7</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr class="linha2">
+                <th>8</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr id="alfabetica">
+                <td></td>
+                <td>A</td>
+                <td colspan="1">A</td>
+                <td colspan="1">B</td>
+                <td colspan="1">C</td>
+                <td colspan="1">D</td>
+                <td colspan="1">F</td>
+                <td colspan="1">G</td>
+                <td colspan="1">H</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
