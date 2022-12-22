@@ -14,15 +14,29 @@
             width: 500px;
             border-collapse:collapse;
               margin: auto;
+              position: relative;
         }
 
-        
-
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        thead > tr > th{
+            position: sticky; /* Cabeçalho fixo em cima com rolagem para baixo, alerta: precisa que o table tenha position relative.*/
+            top: -1px;
+            background-color: lightseagreen;
+        }
         td,th{
             border: 1px solid black;
             text-align: center;
         }
-
+        tr:hover{
+            font-size: 1.2em;
+            font-weight: bold;
+            background-color: lightgray;
+        }
         th{
             background-color: aqua;
         }
@@ -36,10 +50,10 @@
         <caption>A população dos estados</caption>
         <thead>
             <tr>
-                <th>Nome</th>
-                <th>Sobrenome</th>
-                <th>idade</th>
-                <th>genero</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">idade</th>
+                <th scope="col">genero</th>
             </tr>
         </thead>
 
@@ -58,10 +72,210 @@
                 <td>Masculino</td>
             </tr>
 
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+
+
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
+            <tr>
+                <td>jhean</td>
+                <td>antunes lopes</td>
+                <td>19 anos</td>
+                <td>Masculino</td>
+            </tr>
+            
+            <tr>
+                <td>luan</td>
+                <td>antunes lopes</td>
+                <td>20 anos</td>
+                <td>Masculino</td>
+            </tr>
         </tbody>
 
         <tfoot>
-            <th>Clientes</th>
+            <th scope="row">Clientes</th>
             <td>2</td>
         </tfoot>
 

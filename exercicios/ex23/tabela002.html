@@ -14,6 +14,7 @@
         table{
             width: 500px;
             border-collapse:collapse ;
+            position: relative;
             
         }
 
@@ -24,6 +25,14 @@
             background-color: #a1a1a1cc;
         }
 
+        tbody > tr:nth-child(odd){ /*2n-1*/
+            background-color: aliceblue;
+        }
+
+        tbody > tr:nth-child(even){ /*2n*/
+            background-color: rgb(179, 179, 179);
+        }
+
         td,th{
             border: 1px solid black;
             padding: 8px;
@@ -32,6 +41,12 @@
         thead, tfoot{
             background-color: dimgrey;
             color: whitesmoke;
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
+            background-color: dimgrey;
         }
 
         td.num{
@@ -203,5 +218,6 @@
                 </tr>
             </tfoot>
         </table>
+        <p>100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque neque cum, modi provident, tempora quaerat reprehenderit culpa error veritatis et beatae laboriosam odit, alias omnis obcaecati id sunt suscipit aliquam? 200 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus provident voluptas labore vitae architecto quibusdam beatae eum voluptate in nihil blanditiis iste, similique porro maiores, id eos voluptatem consequatur quasi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quo laboriosam eum, magnam molestias sint distinctio. Doloribus incidunt iure minus illum amet, qui necessitatibus adipisci obcaecati sapiente quisquam, dolores cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam omnis odit, molestiae nobis voluptas ex dolor, at iure nostrum eos illo vero officiis amet a asperiores eum minus necessitatibus.100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque neque cum, modi provident, tempora quaerat reprehenderit culpa error veritatis et beatae laboriosam odit, alias omnis obcaecati id sunt suscipit aliquam? 200 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus provident voluptas labore vitae architecto quibusdam beatae eum voluptate in nihil blanditiis iste, similique porro maiores, id eos voluptatem consequatur quasi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quo laboriosam eum, magnam molestias sint distinctio. Doloribus incidunt iure minus illum amet, qui necessitatibus adipisci obcaecati sapiente quisquam, dolores cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam omnis odit, molestiae nobis voluptas ex dolor, at iure nostrum eos illo vero officiis amet a asperiores eum minus necessitatibus.100 Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque neque cum, modi provident, tempora quaerat reprehenderit culpa error veritatis et beatae laboriosam odit, alias omnis obcaecati id sunt suscipit aliquam? 200 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus provident voluptas labore vitae architecto quibusdam beatae eum voluptate in nihil blanditiis iste, similique porro maiores, id eos voluptatem consequatur quasi! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloribus quo laboriosam eum, magnam molestias sint distinctio. Doloribus incidunt iure minus illum amet, qui necessitatibus adipisci obcaecati sapiente quisquam, dolores cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore numquam omnis odit, molestiae nobis voluptas ex dolor, at iure nostrum eos illo vero officiis amet a asperiores eum minus necessitatibus.</p>
 </body>
 </html>
