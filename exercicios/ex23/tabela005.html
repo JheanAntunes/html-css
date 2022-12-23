@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicios de Tabelas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption{
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 8px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+        }
+        
+        .destaque{
+            background-color: yellowgreen;
+        }
+        
+        col.cnome{
+            background-color: cadetblue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Exercicios de Tabelas</h1>
+    <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="csexo">
+                <col class="cidade">
+                <col class="cprof">
+            </colgroup>
+        
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+        
+        <tr>
+            <td>Jhean</td>
+            <td>Masculino</td>
+            <td>19</td>
+            <td>vagabundo</td>
+        </tr>
+
+        <tr>
+            <td>marcos</td>
+            <td>Masculino</td>
+            <td>21</td>
+            <td>vagabundo</td>
+        </tr>
+
+        <tr class="destaque">
+            <td>felipe</td>
+            <td>Masculino</td>
+            <td>29</td>
+            <td>vagabundo</td>
+        </tr>
+
+        <tr>
+            <td>antunes</td>
+            <td>Masculino</td>
+            <td>32</td>
+            <td>vagabundo</td>
+        </tr>
+
+        <tr>
+            <td>lopes</td>
+            <td>Masculino</td>
+            <td>41</td>
+            <td>vagabundo</td>
+        </tr>
+    </table>
+</body>
+</html>
