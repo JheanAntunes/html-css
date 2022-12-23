@@ -17,6 +17,13 @@
             width: 500px;   
         }
 
+        caption{
+            font-size: 1.4em;
+            font-weight: bolder;
+            font-variant: small-caps;
+            padding: 10px;
+        }
+
         thead{
             background-color: #83878b;
             color: white;
@@ -66,23 +73,26 @@
 <body>
     
     <table>
+        <caption>
+            materia e notas dos alunos
+        </caption>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th scope="col" rowspan="2">Área</th>
+                <th scope="col" rowspan="2">Disciplinas</th>
+                <th scope="colgroup" colspan="2">Notas</th>
+                <th scope="col" rowspan="2">Média</th>
             </tr>
             <tr>
-                <th>nota1</th>
-                <th>nota2</th>
+                <th scope="col">nota1</th>
+                <th scope="col">nota2</th>
             </tr>
         </thead>
             
 
         <tbody>
             <tr>
-                <th class="thfundobranco" rowspan="4">Exatas</th>
+                <th class="thfundobranco" rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -110,11 +120,11 @@
                 <td>0.0</td>
             </tr>
             <tr id="linhacomfundocinzae-letrabranca">
-                <th class="thEtfootleft" colspan="4">Média de  Exatas</th>
+                <th class="thEtfootleft" colspan="4" scope="row">Média de  Exatas</th>
                 <td>0.0</td>
             </tr>
             <tr>
-                <th class="thfundobranco" rowspan="2">Humanas</th>
+                <th class="thfundobranco" rowspan="2" scope="rowgroup">Humanas</th>
                 <td>Hisoria</td>
                 <td>0.0</td>
                 <td>0.0</td>
@@ -131,7 +141,7 @@
 
         <tfoot>
             <tr>
-                <th class="thEtfootleft" colspan="4">Média de Humanas</th>
+                <th class="thEtfootleft" colspan="4" scope="row">Média de Humanas</th>
                 <td>0.0</td>
             </tr>
         </tfoot>
