@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticas de iframe</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela{
+            width: 95vw;
+            height: 400px;
+            border: 2px dashed black;
+        }
+    </style>
+</head>
+<body>
+    <h1>As minhas práticas de iframe</h1>
+
+    <nav>
+        <ul>
+            <li><a href="paginas-extras/pag001.html" target="frame">minha primeira pagina</a></li>
+            <li><a href="paginas-extras/pag002.html" target="frame"> Minha segunda pagina</a></li>
+            <li><a href="paginas-extras/pag003.html" target="frame"> minha terceira pagina</a></li>
+        </ul>
+    </nav>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias perspiciatis at blanditiis nihil omnis numquam aperiam? Non cupiditate magnam iusto laboriosam sunt doloribus atque consequatur, sequi recusandae ipsum, molestias ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. A inventore neque voluptas praesentium optio, ad fugiat molestias! Dolore modi accusamus distinctio enim? Nostrum accusantium quam veniam laborum quod? Repellendus, incidunt.</p>
+    <iframe id="tela" name="frame" srcdoc="<h1> Utilizando um novo parametro </h1> <p>Testando para ver se está funcionando</p> <img src='paginas-extras/foto-perfil-guanabara.png'>" scrolling="auto">
+        <p>Seu computador não é compativel com isso!!! Acesse por links</p>
+        
+    </iframe>
+</body>
+</html>
