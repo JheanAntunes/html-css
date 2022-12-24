@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas responsivas</title>
+    
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        table{
+            width: 50vw;
+            border-collapse: collapse;
+        }
+        /*thead > tr > th{
+           position: sticky;
+           top: -1px;
+            background-color: rgb(156, 194, 228);
+            
+            
+        }*/
+        caption{
+            font-size: 1.2em;
+            font-weight: bold;
+            padding: 20px;
+        }
+
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        th:nth-child(even){
+            background-color: rgb(202, 202, 202);
+        }
+
+        div#container{
+            overflow-x: auto; /*voce cria uma barra de rolagem horizontal*/
+           
+            /*overflow-x: auto;voce cria uma barra de rolagem vertical*/
+            
+        }
+
+        col.vermelho{
+            background-color: red;
+        }
+
+        col.green{
+            background-color: green;
+        }
+
+        col.yellow{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae porro odio reiciendis quia minus repellat harum cupiditate unde alias laboriosam, id, incidunt provident culpa, fugit tenetur ipsa officiis ullam? Accusamus.</p>
+    <div id="container">
+        <table>
+            <colgroup>
+                <col class="vermelho" span="4">
+                <col class="green" span="4">
+                <col class="yellow" span="5">
+            </colgroup>
+            <caption>Tabelas responsivas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Produto</th>
+                    <th scope="col">Janeiro</th>
+                    <th scope="col">feveiro</th>
+                    <th scope="col">março</th>
+                    <th scope="col">abril</th>
+                    <th scope="col">maio</th>
+                    <th scope="col">junho</th>
+                    <th scope="col">julho</th>
+                    <th scope="col">agosto</th>
+                    <th scope="col">Setembro</th>
+                    <th scope="col">outubro</th>
+                    <th scope="col">novembro</th>
+                    <th scope="col">dezembro</th>
+                </tr>
+            </thead>
+        
+            <tbody>
+                    <tr>
+                        <th>tv 40</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th>Samsung</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th>Ipad mini</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th>Playstation 4</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th>Lava louças</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <th>amazon Echo</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+
+                    <tr>
+                        <th>amazon Echo</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+
+                    <tr>
+                        <th>amazon Echo</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+
+
+                    <tr>
+                        <th>amazon Echo</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+
+                    <tr>
+                        <th>amazon Echo</th>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>11</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
