@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de Práticas</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div#positionrelative{
+            position: relative;
+            height: 30vh;
+            padding-bottom: 20%;
+        }
+
+        iframe.iframecentralizadoposition{
+            position: absolute;            
+            box-shadow: inset 1px 1px 10px black;
+            border-radius: 10px 10px;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            height: 70%;
+            width: 40%;
+        }
+
+        iframe.iframecentralizado{
+            display: block;
+            margin: auto;
+            border: 1px solid black;
+            box-shadow: inset 1px 1px 1px 1px black;
+        }
+        p{
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Colocando vídeo e  mapa com iframe</h1>
+    <div id="positionrelative"><iframe class="iframecentralizadoposition" src=https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58820.8711743346!2d-43.52312135098555!3d-22.865209268323554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be006a3cb9ebf%3A0xeb7f908d0ebabb4a!2sBangu%2C%20Rio%20de%20Janeiro%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1671976735046!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade frameborder= 1"></iframe></div>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus aperiam consequatur ipsam tenetur at commodi. Enim sapiente provident modi ipsum! Consequatur reprehenderit cumque obcaecati amet quam, voluptates cupiditate minus veniam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tenetur ducimus magni nihil aspernatur reprehenderit quidem repellendus et, voluptate, odit illo incidunt ex asperiores adipisci magnam ratione sit aut voluptatum.</p>
+    <iframe class="iframecentralizado" width="560" height="315" src="https://www.youtube.com/embed/xZM1OXxBvsE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
