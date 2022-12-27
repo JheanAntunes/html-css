@@ -8,11 +8,14 @@
 </head>
 <body>
    <form action="cadastro.php" autocomplete="on" method="get">
-    <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required minlength="1" maxlength="20" size="10" placeholder="Nome do usuário" autocomplete="username">  </p>
-    <p><label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome" required min="20" size="20" placeholder="usuario do sobrenome"></p>
-    <input type="submit" value="enviar">
-    <input type="button" value="enviar">
-    <input type="reset" value="limpar">
+    <fieldset>
+        <legend>Minhas praticas</legend>
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome" required minlength="1" maxlength="20" size="10" placeholder="Nome do usuário" autocomplete="username">  </p>
+        <p><label for="isobrenome">Sobrenome: </label><input type="text" name="sobrenome" id="isobrenome" required min="20" size="20" placeholder="usuario do sobrenome"></p>
+        <input type="submit" value="enviar">
+        <input type="button" value="enviar">
+        <input type="reset" value="limpar">
+    </fieldset>
     
 </form>
 </body>

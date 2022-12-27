@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <fieldset>
+            <legend>Apresentação do usuario</legend>
+            <div>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" placeholder="Nome completo" autocomplete="name">
+            </div>
+            <div>
+                <label for="ianos">idade:</label>
+                <input type="number" name="anos" id="ianos" required min="0" max="150" placeholder="idade">
+            </div>
+            <div>
+                <label for="inascimento">data de nascimento:</label>
+                <input type="date" name="nascimento" id="inascimento" required value="2022-12-27">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>comunicação com usuario</legend>
+            <div>
+                <label for="iemail">E-mail</label>
+                <input type="email" name="email" id="iemail" required placeholder="email" autocomplete="email">
+            </div>
+            <div>
+                <label for="inumero">Numero:</label>
+                <input type="tel" name="numero" id="inumero" required placeholder="numero de telefone" autocomplete="tel">
+            </div>
+        </fieldset>
+
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+    </form>
+</body>
+</html>
