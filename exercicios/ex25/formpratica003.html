@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formularios</title>
+</head>
+<body>
+    <h1>Pratica de formularios </h1>
+    
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome completo" autocomplete="name">    
+        </p>
+
+        <p>
+            <label for="isenha">Senha:</label>
+            <input type="password" name="senha" id="isenha" required minlength="6" maxlength="30" placeholder="senha do usuário" autocomplete="current-password">
+        </p>
+
+        <p>
+            <label for="idiaianoimes">Data de nascimento:</label>
+            <input type="date" name="diaanomes" id="idiaianoimes" required value="2022-12-27">
+        </p>
+
+        <p>
+            <label for="ianos">Quantos anos:</label>
+            <input type="number" name="anos" id="ianos" required min="0" max="150">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+        
+        <p>
+            <input type="reset" value="Resetar">
+        </p>
+    </form>
+</body>
+</html>
