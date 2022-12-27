@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Exemplo de Formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+
+        <fieldset>
+            <legend>Gênero</legend>
+            <input type="radio" name="sexo" id="imas"> <label for="imas">Masculino</label>
+            <input type="radio" name="sexo" id="ifem"> <label for="ifem">Feminino</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Você tem mais de 18 anos ?</legend>
+            <input type="radio" name="resposta" id="isim"> <label for="isim">Sim</label>
+            <input type="radio" name="resposta" id="inao"> <label for="inao">Não</label>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Qual linguagens você tem conhecimento?</legend>
+            <input type="checkbox" name="c" id="ic"> <label for="ic">CC+</label>
+            <input type="checkbox" name="js" id="ijs"> <label for="ijs">JavaScript</label>
+            <input type="checkbox" name="php" id="iphp"> <label for="iphp">Php</label>
+            <input type="checkbox" name="nenhuma" id="inenhuma" checked> <label for="inhehuma">Nenhuma</label>
+        </fieldset>
+        <div>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </div>
+
+    </form>
+</body>
+</html>
