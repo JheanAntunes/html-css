@@ -24,10 +24,27 @@
                 <option value="onepiece"></option>
             </optgroup>
         </select>
+        
+        
+        <p>
+            <label for="irecomendacao">Recomendação</label>
+            <input type="text" name="recomendacao" id="irecomendacao" list="lstrecomendacao">
+            <datalist id="lstrecomendacao">
+                <option value="hxh">Hunter x Hunter</option>
+                <option>Full metal</option>
+                <option >Tokio gholl</option>
+            </datalist>
+        </p>
 
-        <label for="irecomendacao">Recomendação</label>
-        <input type="text" name="recomendacao" id="irecomendacao">
+        <p>
+            <label for="imsg">Quais da lista voce mais gostou ?</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
 
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Resetar">
+        </p>
     </form>
 </body>
 </html>
