@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <label for="imanga">Mangares favoritos</label>
+        <select name="manga" id="imanga">
+            <optgroup label="Mangá">
+                <option value="kingdom">kingdom</option>
+                <option value="berserk">berserk</option>
+                <option value="vagabund">vagabund</option>
+            </optgroup>
+            
+            <optgroup label="Animes">
+                <option value="overlord">overlord</option>
+                <option value="viland saga">viland saga</option>
+                <option value="onepiece"></option>
+            </optgroup>
+        </select>
+
+        <label for="irecomendacao">Recomendação</label>
+        <input type="text" name="recomendacao" id="irecomendacao">
+
+    </form>
+</body>
+</html>
