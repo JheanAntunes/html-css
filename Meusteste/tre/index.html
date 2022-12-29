@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticas com html e javaScript</title>
+    <style>
+        body{
+         background-color: aliceblue;   
+        }
+
+        div#primeiradiv{
+            background-color: gray;
+            height: 300px;
+            width: 300px;
+            
+        }
+
+        div#segundadiv{
+            background-color: rgb(58, 57, 57);
+            height: 300px;
+            width: 300px;
+            display: inline-block ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meus testes</h1>    
+    <div id="primeiradiv" onclick="clicou()">
+    
+    </div>
+
+    <div id="segundadiv">
+
+    </div>
+
+    <script>
+     let a = 5
+     let b = 5
+     let jhean = 5
+     let divrs =  window.document.getElementById('primeiradiv')
+     
+     function clicou(){
+           while (true) {
+            
+           
+            divrs.innerHTML += a + b
+           divrs.innerHTML += '<p> Voce está aprendendo </p>'
+            if (jhean <= 10){
+            divrs.innerHTML += '<h2> Voce está indo bem </h2>'
+            
+           }
+        }
+        }
+        
+    </script>
+</body>
+</html>
