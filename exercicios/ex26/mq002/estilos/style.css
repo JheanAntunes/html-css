@@ -1,3 +1,24 @@
 @charset "UTF-8";
 
 /*Esse vai aplicar em todas formatos, impressora, deitado, em pé etc*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
+
+h1{
+    color: white;
+    text-shadow: 2px 2px 0px #142077;
+    padding: 10px;
+}
