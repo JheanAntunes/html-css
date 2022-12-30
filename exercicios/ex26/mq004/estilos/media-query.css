@@ -2,3 +2,70 @@
 
 /* Versão para ao demais dispositivos. Vamos utilizar a tecnica que colocas as @media no css.*/
 
+/* Typical device Breakpoints 
+Pequenas telas:  max-width 600px
+Celular: min-width 600px
+Tablet: 768px até 992px
+Desktop: min-width: 992px até 1200px
+Grandes telas: min-width: 1200px 
+*/
+
+@media print{ /* Impressão */
+     body{
+        background-image: url(../imagens/back-print.jpg); /*Desnecessário*/
+
+     }
+     
+     main{
+        border: 2px solid black;
+     }
+
+     main::after{
+        content: 'Essa impressão  foi feita atráves do curso em video';
+     }
+
+     main h1{
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: none;
+        color: black;
+     }
+     
+     img#phone {display: none; }
+     img#tablet {display: none; }
+     img#print {display: block; }
+     img#pc {display: none; } 
+     img#tv {display: none; }
+}
+
+@media screen and (min-width: 768px) and (max-width: 922px) { /*Tablet */
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+        img#phone {display: none; }
+        img#tablet {display: block; }
+        img#print {display: none; }
+        img#pc {display: none; } 
+        img#tv {display: none; }
+}
+
+@media screen and (min-width: 922px) and (max-width: 1200px){ /*Desktop*/ 
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+
+}
+
+@media screen and (min-width: 1200px){ /*Grandes  Telas*/
+    body{
+        background-image: url(../imagens/back-tv.jpg);
+    }
+
+    main{
+        width: 700px;
+    }
+    img#phone {display: none; }
+    img#tablet {display: none; }
+    img#print {display: none; }
+    img#pc {display: none; } 
+    img#tv {display: block; }
+}
