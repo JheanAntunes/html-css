@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+h1{
+    color: black;
+    text-shadow: none;
+}
+
+main::after{
+    content: 'A minha pratica de HTML';
+}
+
+img#phone  {display: none;}
+img#tablet {display: none;}
+img#print  {display: block;}
+img#pc     {display: none;}
+img#tv     {display: none;}
