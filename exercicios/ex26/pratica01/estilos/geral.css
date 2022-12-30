@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html, body{
+    background-color: #3535b8;
+    width: 100vw;
+    height: 100vh;
+}
+
+h1 {
+    color: white;
+    text-shadow: 2px 2px 0px #142077;
+    padding: 10px;
+}
+
+menu ul{
+    list-style-type: none;
+}
