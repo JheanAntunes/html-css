@@ -26,7 +26,7 @@ span#burguer{
     color: white;
     text-align: center;
     padding: 7px;
-    cursor: pointer;
+    
 }
 
 span#burguer:hover{
@@ -35,7 +35,7 @@ span#burguer:hover{
 }
 
 menu{
-    display: none;
+    display: block;
 }
 
 menu > ul{
