@@ -5,11 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos/style.css"> <!--Primerio mobile first-->
+    <link rel="stylesheet" href="estilos/table.css"> <!--Tablet-->
+    <link rel="stylesheet" href="estilos/desktop.css"> <!--desktop-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"> <!--Link para pegar icones (pegamos o de menu)-->
     <title>Media Query</title>
 </head>
-<body>
+<body onresize="mudoutamanho()">
     <header>
         <h1>Media Query</h1>
         <span id="burguer" class="material-icons md-48" onclick="clickmenu()">menu</span>
@@ -35,9 +37,19 @@
         </article>
     </main>
     <script>
+        
+        function mudoutamanho(){
+            if(innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+        
         function clickmenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none'
+                
             } else {
                 itens.style.display = 'block'
             }
