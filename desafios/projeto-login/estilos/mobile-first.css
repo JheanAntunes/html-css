@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+:root{
+    --fonte-padrao: Arial, Helvetica, sans-serif;
+    --cor0: rgb(95, 51, 139);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+ 
+}
+
+body{
+    font-family: var(--fonte-padrao);
+    background-color: var(--cor0);
+    width: 100vw;
+    height: 100vh;
+    position: relative;    
+}
+
+main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border-radius: 20px;
+    
+}
+
+section#login{
+background-color: white;
+border-radius: 20px;
+}
+
+div#imagem{
+    height: 250px;
+   background: var(--cor0) url('../imagens/metal.jpg') no-repeat center center fixed;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+    
+}
+
+
+
+div#formulario > h1{
+    text-align: center;
+   margin: 10px;
+   font-size: 2.1em;
+}
+div#formulario > p{
+    text-align: justify;
+    padding: 20px 10px 20px 5px;
+    text-indent: 10px;
+}
+
+div#gmail{
+    display: block;
+    background-color: rebeccapurple;
+    margin: auto;
+    width: 35%;
+    
+}
+
+div#gmail > input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px  solid rgba(102, 51, 153, 0.274);
+   margin: 2px 0px 2px 0px;
+    background-color: lightblue;
+}
+
+div#gmail > label > span{
+     vertical-align: middle;
+        
+}
+
+div#senhacss{
+    margin: 5px ;
+    background-color: aqua;
+    text-align: center;
+}
+
+div#senhacss > input{
+    padding: 10px;
+}
+
+div#botao > input{
+    display: block;
+    margin: 7px auto;
+    width: 40%;
+    padding: 10px;
+    background-color: aquamarine;
+}
+
+
