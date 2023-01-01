@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+main{
+    background-color: aqua;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: transform 2s, top 2s left 2s;    
+}
+
+section#login{
+   
+
+}
+
+div#imagem{
+    background-image: url(../imagens/metal.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 40vh;
+}
+
+div#formulario > h1{
+    text-align: center;
+    padding: 10px 0px;
+}
+
+div#formulario > p {
+    text-align: justify;
+    text-indent: 10px;
+    padding: 10px  5px 0px 7px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    inline-size: auto;
+}
+
+div#email{
+    background-color: rebeccapurple;
+    
+    padding: 3px;
+    border-radius: 10px;
+   text-align: center;
+    width: 340px;
+    margin: auto;
+   
+}
+
+
+
+div#email > input{
+    padding: 10px  0px 10px 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    inline-size: 15vw;
+    
+    
+}
+
+label{
+   
+    vertical-align: middle ;
+}
+
+@media screen and (max-width: 360px){
+
+
+    main{
+        
+        border-radius: 0px 0px 9px 9px;
+    }
+
+    section{
+       width: auto;
+       padding: 0px 0px 2px 0px;
+       min-width: 280px;
+       background-color: antiquewhite;
+       
+    }
+
+    div#formulario{
+        border-radius: 20px;
+        
+    }
+
+    div#email{
+        width: auto;
+        margin: 0px 5px;
+    }
+
+    div#email > input{
+        inline-size: 30%;
+    }
+
+    section#login{
+       
+        overflow-x: none;
+        
+    }
+
+    section#login::-webkit-scrollbar{
+        height: none;
+        width: none;
+        overflow-x: none;
+    }
+}
+    
