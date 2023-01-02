@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste ofline</title>
+</head>
+<body>
+    <header>
+        <h1>Praticas online</h1>
+        <menu>
+            <ul>
+                <li><a href="#">opção 1</a></li>
+                <li><a href="#">opção 2</a></li>
+                <li><a href="#">opção 3</a></li>
+                <li><a href="#">opção 4</a></li>
+                <li><a href="#">opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        
+        <section>
+            <form action="" method="get">
+                <label for="isubtracao">Subtração</label>
+                <input type="checkbox" name="subtracao" id="isubtracao" onclick="calculo()">
+                <div id="res">
+
+                </div>
+            </form>
+        </section>
+
+        <section id="jhean">
+                <form action="" method="post">
+                    <div id="num1">
+                        <label for="inum1">Primeiro número</label>
+                        <input type="number" name="num" id="inum1" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                    </div>
+
+                    <div id="num2">
+                        <label for="inum2">Segundo número</label>
+                        <input type="number" name="num" id="inum2" oninput="isoma.innerHTML = Number(inum1.value) + Number(inum2.value)">
+                        
+                    </div>
+                    <label for="isoma">Soma: </label>
+                    <output id="isoma">0</output>
+
+                </form>
+            
+        </section>
+    </main>
+    <script>
+        j = window.document.getElementById('jhean')
+        c = window.document.getElementById('isubtracao')
+        
+        function calculo(){
+            if (j.style.display == 'block'){
+            j.style.display = 'none'
+           } else {
+            j.style.display = 'block'
+           }
+       
+    }
+    </script>
+</body>
+</html>
