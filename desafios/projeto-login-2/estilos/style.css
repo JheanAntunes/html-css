@@ -31,7 +31,7 @@ section#login{
     border-radius: 10px;
     overflow: hidden;
     transform: translate(-50%,-50%);
-    transition: width .5s, height .5s;
+    transition: width .3s, height .3s;
     transition-timing-function: ease;
 }
 
@@ -84,12 +84,12 @@ div.campos > input{
     border: none;
     border: 1px solid black;
     width: calc(100% - 46px);
-    transform: translateY(-6px);
+    
     background-color: white;
     border-radius: 10px;
     margin-top: 10px;
     padding-left: 5px;
-
+    transform: translateY(-6px);
 }
 
 
@@ -116,6 +116,8 @@ form > input[type=submit]{
     margin-bottom: 5px;
     background-color: aquamarine;
     cursor: pointer;
+    border-radius: 5px;
+    
 }
 form > input:focus-within{
     background-color: aliceblue;
@@ -129,6 +131,7 @@ button{
     font-size: 1.2em;
     padding: 5px;
     background-color: aquamarine;
+    border-radius: 5px;
 }
 
 span#fora{

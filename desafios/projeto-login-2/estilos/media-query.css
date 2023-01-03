@@ -17,20 +17,20 @@ telas grandes: min-1281px
     section#login{
         
         background-color: white;
-        width: 80vw;
-        height: 290px;
+        width: 70vw;
+        height: 310px;
     }
 
     section#login > div#imagem{
         float: left;
-        width: 30%;
+        width: 34%;
         height: 100%;
     }
 
     section#login >div#formulario{
         float:right;
         width: 66%;
-        padding: 4px;
+        
     }
 
 }
