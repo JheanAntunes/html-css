@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* Typical device Breakpoints 
+Pequenas telas:  max-width 600px
+Celular: min-width 600px
+Tablet: 768px até 992px
+Desktop: min-width: 992px até 1200px
+Grandes telas: min-width: 1200px 
+*/
+ 
+/*abaixo é para tablet*/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    :root{
+        --cor_fundo: hsl(219, 21%, 53%);
+        --titulo: hsl(218, 44%, 22%);
+        --degrade: lightblue;
+        --paragrafo: rgb(151, 151, 151);
+    }
+    
+    body{
+        background-image: linear-gradient(to top, var(--cor_fundo), var(--degrade));
+    }
+
+    main{
+        width: 30vw;
+        height: 390px;
+    }
+    
+}
+ /*Abaixo é para desktop e telas grandes*/
+@media screen and (min-width: 993px){ 
+    :root{
+        --cor_fundo: hsl(219, 21%, 53%);
+        --titulo: hsl(218, 44%, 22%);
+        --degrade: lightblue;
+        --paragrafo: rgb(82, 80, 80);
+    }
+    
+    body{
+        background-image: linear-gradient(to top, var(--cor_fundo), var(--degrade));
+    }
+
+    main{
+        width: 20vw;
+        height: 440px;
+    }
+
+    div#texto > h1{
+        font-size: 1.4em;
+    }
+
+    div#texto > p{
+        font-size: .9em;
+        color: var(--paragrafo);
+    }
+}

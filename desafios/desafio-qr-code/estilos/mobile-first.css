@@ -4,5 +4,64 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
+:root{
+    --cor_fundo: hsl(220, 15%, 55%);
+    --titulo: hsl(218, 44%, 22%);
+    --degrade: lightblue;
+    --paragrafo: rgb(151, 151, 151);
+}
+
+
+html, body{
+    width: 100vw;
+    height: 100vh;
+    background-color:var(--cor_fundo);
+    display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+main{
+    background-color: white;
+    width: 250px;
+    height: 370px;
+    border-radius: 10px;
+    box-shadow: 0px 0px  2px black;
+    transition: width 1s, height 1s;
+    transition-timing-function: ease;
+}
+
+section#paidiv{
+    background-color: white;
+    margin: 15px;
+    
+}
+
+section#paidiv > div#imagem{
+    background: hsl(220, 15%, 55%) url('../images/image-qr-code.png') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    border-radius: 10px;
+}
+
+section#paidiv > div#texto{
+    text-align: center;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.322);
+    text-indent: 3px;
+}
+
+div#texto > h1{
+    font-size: medium;
+    margin: 10px 0px;
+    color: var(--titulo);
+    text-shadow: 0px 0px 1px hsla(217, 45%, 22%, 0.479);
+}
+
+div#texto > p{
+    font-size: smaller;
+    color: var(--paragrafo);
+    text-shadow: 0px 0px 1px rgba(141, 141, 141, 0.644);
+}
