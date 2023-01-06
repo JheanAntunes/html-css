@@ -39,6 +39,11 @@ Grandes telas: min-width: 1200px
     section.texto > span{
         margin-top: 1em;
     }
+    
+    div.botao > button:hover{
+        background-color: #2b584a;
+         cursor: pointer;
+     }
 }
 
 /*Desktop e telas maiores*/
@@ -70,5 +75,10 @@ Grandes telas: min-width: 1200px
 
     section.texto > span{
         margin-top: 1em;
+    }
+
+    div.botao > button:hover{
+       background-color: #2b584a;
+        cursor: pointer;
     }
 }
