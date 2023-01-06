@@ -4,51 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="estilos/mobile-first.css">
+    
     <title>Meus testes de flex box</title>
     <style>
         
-        *{
-            margin: 0px;
-            padding: 0px;
-        }
-
-        body{
-            padding: 0em;
-            margin: 0px;
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-        }
-
-        main{
-            position: absolute;
-            width: 250px;
-            height: 500px;
-            background-color:   hsl(30, 38%, 92%);
-            display: flex;
-            flex-direction: column;           
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%,-50%);
-            padding: 1em;
-
-        }
-
-        section{
-            background-color: aquamarine;
-            height: 100%;
-            width: 100%;
-            
-        }
-
-        section.imagem{
-            background: white url('images/image-product-mobile.jpg') no-repeat center center;
-            background-size: cover;
-        }
-
-        section.diferenciada{
-            margin-top: 10px;
-        }
+        
     </style>
 </head>
 <body>
@@ -57,8 +20,22 @@
             
         </section>
 
-        <section class="diferenciada">
+        <section class="texto">
+            <article>
+                <span>P E R F U M E</span>
+                <h1>Gabrielle Essence &nbsp; Eau De Parfum</h1>
+                <p class="relativoh1">A floral, solar and voluptuous interpretation composed by olivier Polger, Perfumer-Creator for the House of CHANEL</p>
+
+                <div id="preco">
+                    <p>$149.99</p> <span><s>$169.99</s></span>
+                    <form action="jhean.php">
+                        <div class="botao"> <button><span id="icone"  class="material-icons md-48">local_grocery_store</span> <span class="textobotao">Add to cart</span></button></div>
+                    </form>
+                </div>
+
+                
             
+            </article>
         </section>
     </main>
 </body>
