@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+
+/* Typical device Breakpoints 
+Pequenas telas:  max-width 600px
+Celular: min-width 600px
+Tablet: 768px até 992px
+Desktop: min-width: 992px até 1200px
+Grandes telas: min-width: 1200px 
+*/
+
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main{
+        flex-direction: row;
+        width: 400px;
+        height: 300px;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    section.texto{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+   
+
+    section.imagem{
+        background-image: url('../images/image-product-desktop.jpg');
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    div.botao{
+        margin-top: 1em;
+    }
+
+    div.botao > button:hover{
+        cursor: pointer;
+        background-color: hsl(158, 37%, 24%);
+    }
+
+    h1{
+        width: 85%;
+        margin-bottom: 0px;
+        padding: 0px;
+   }
+}
+
+
+@media screen and (min-width: 994px) {
+   
+   
+ 
+    main{
+        flex-direction: row;
+        width: 500px;
+        height: 300px;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    
+    section.texto{
+        height: 100%;
+        width: 100%;
+        
+    }
+
+   
+
+    section.imagem{
+        background-image: url('../images/image-product-desktop.jpg');
+        height: 100%;
+        width: 100%;
+        border-radius: 10px 0px 0px 10px;
+    }
+
+    div.botao{
+        margin-top: 1em;
+    }
+
+    div.botao > button:hover{
+        cursor: pointer;
+        background-color: hsl(158, 37%, 24%);
+    }
+
+    h1{
+        width: 65%;
+        margin-bottom: 0px;
+        padding: 0px;
+   }
+
+   section.texto > article > span{
+    margin-top: 1em;
+   }
+}
