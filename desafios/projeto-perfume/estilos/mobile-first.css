@@ -35,7 +35,6 @@ html, body{
 main{
     width: 280px;
     height: 420px;
-   border: 1px dashed black;
     display: flex;
     flex-direction: column;
 }
