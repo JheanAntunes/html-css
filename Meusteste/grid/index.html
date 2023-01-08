@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticas de Grid</title>
+    <style>
+        html,body{
+            box-sizing: border-box;       
+        }
+
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        main{
+            background-color: gray;      
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh;
+            grid-template-areas: "h h"
+                                 "main aside"
+                                 "f f"
+            ;
+                               
+        }
+
+      section.box1{
+                background-color: lightcoral;
+                grid-area: h;
+               
+        }
+
+        section.box2{
+            background-color: lightcyan;
+            grid-area: main;
+        }
+
+        section.box3{
+            background-color: lightgoldenrodyellow;
+            grid-area: aside;
+        }
+
+        section.box4{
+            background-color: lightgray;
+            grid-area: f;
+
+        }
+
+        section.box5{
+            background-color: lightgreen;
+        }
+
+        section.box6{
+            background-color: lightseagreen;
+        }
+       
+    </style>
+</head>
+<body>
+    
+    <main>
+        <section class="box1">
+
+        </section>
+        
+        <section class="box2">
+
+        </section>
+        
+        <section class="box3">
+
+       </section>
+
+       <section class="box4">
+
+        </section>
+
+         <!-- <section class="box5">
+
+        </section>
+
+        <section class="box6">--> 
+
+        </section>
+    </main>
+</body>
+</html>
