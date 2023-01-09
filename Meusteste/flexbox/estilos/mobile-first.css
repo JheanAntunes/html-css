@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    /*fontes: 300-400 e 600*/
+    --font-300-400-600:'Outfit', sans-serif;
+    /*cores*/
+    --cor01: hsl(215, 51%, 70%);
+    --cor02: hsl(178, 100%, 50%);
+    --cor03: hsl(217, 54%, 11%); /*main*/
+    --cor04: hsl(216, 50%, 16%);/*card*/
+    --cor05: hsl(215, 32%, 27%);
+}
+
+html, body{
+    background-color:var(--cor03); 
+    height: 100vh;
+    width: 100vw;   
+}
+
+div.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+main{
+    background-color: var(--cor04);
+    width: 280px;
+    height: 500px;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    padding: 1.1em;
+}
+
+section.imagem{
+    background: var(--cor04) url('../images/image-equilibrium.jpg') no-repeat center center;
+    background-size: cover;
+    border-radius: 0.5em;
+    height: 60%;
+}
+
+section.texto > article > h1{
+    margin-top: .8em;
+    font-family: var(--font-300-400-600);
+    font-weight: 600;
+    color: white;
+}
+
+section.texto > article > h1 > a{
+    text-decoration: none;
+    color: white;
+}
+
+section.texto > article > p{
+    margin-top: 1em;
+    font-family: var(--font-300-400-600);
+    font-weight: 400;
+    color: var(--cor01);
+    font-size: 15px;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.652);
+}
+
+section.quantidade{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+    height: 20px;
+}
+
+section.quantidade > p > svg{   vertical-align: top;}
+section.quantidade > p.eth{  color: aqua; font-family: var(--font-300-400-600); font-weight: 600;}
+section.quantidade > p.days{   font-weight: 400;   color: var(--cor01); font-size: 17px;}
+div.linha-horizontal{
+    margin-top: 1em;
+    width: 100%;
+    border: 1px solid var(--cor01);
+}
+
+section.criador{
+    margin-top: 1em;
+    height: 30px;
+    font-family: var(--font-300-400-600);
+    font-weight: 400;
+}
+
+section.criador > div.imagemcriador{
+    height: 30px;  
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid white;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+section.criador > p{
+    display: inline-block;
+    vertical-align: top;
+   padding-top: .2em;
+   padding-left: .7em;
+   color: white;
+   
+}
+
+section.criador > p > span{
+    color: var(--cor01);
+}
+
+section.criador > p > a{
+    text-decoration: none;
+    color: white;
+}

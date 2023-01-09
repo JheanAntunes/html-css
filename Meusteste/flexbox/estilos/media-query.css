@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+/* Typical device Breakpoints 
+Pequenas telas:  max-width 600px
+Celular: min-width 600px
+Tablet: 768px até 992px
+Desktop: min-width: 992px até 1200px
+Grandes telas: min-width: 1200px 
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    main{
+        width: 330px;
+        height: 551px;
+      
+    }
+    section.texto > article > h1 > a:hover{
+      color:aquamarine;
+      cursor: pointer;  
+  }
+
+  section.texto > article > h1{
+    font-size: larger;
+  }
+  
+  section.texto > article > p{
+    font-size: large;
+  }
+
+    section.criador > p > a:hover{
+      color:aquamarine;
+      cursor: pointer;
+    }
+}
+
+@media screen and (min-width: 993px) {
+  main{
+    width: 360px;
+    height: 550px;
+}
+section.texto > article > h1 > a:hover{
+  color:aquamarine;
+  cursor: pointer;  
+}
+
+section.texto > article > h1{
+  font-size: larger;
+}
+
+
+section.texto > article > p{
+  font-size: large;
+}
+
+section.criador > p > a:hover{
+  color:aquamarine;
+  cursor: pointer;
+}
+
+}
