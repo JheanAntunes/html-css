@@ -32,7 +32,6 @@ div.container{
     align-items: center;
 }
 
-
 main{
     background-color: var(--cor04);
     width: 280px;
@@ -113,7 +112,6 @@ section.criador > p{
    padding-top: .2em;
    padding-left: .7em;
    color: white;
-   
 }
 
 section.criador > p > span{
