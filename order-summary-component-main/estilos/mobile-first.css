@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+:root{
+    
+    /*cores*/
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    --Very-pale-blue: hsl(227, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+    /*Fontes*/
+    --font-500-700-900: 'Red Hat Display', sans-serif;
+}
+
+html,body{ background: var(--Pale-blue) url("../images/pattern-background-mobile.svg") no-repeat right bottom ;
+background-size: cover;
+}
+
+div.container{   
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 280px;
+    height: 450px;
+    background-color:var(--Very-pale-blue);
+    border-radius: 1em;
+    overflow: hidden;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.527);
+}
+
+main > section.imagem{
+    background: var(--Pale-blue) url('../images/illustration-hero.svg') no-repeat center center;
+    background-size: cover;
+    height: 150px;
+}
+
+main > section.texto{
+    margin-top: 1.3em;
+    padding: 0em 1em;
+    text-align: center;
+}
+
+section.texto > article > h2{
+    font-family: var(--font-500-700-900);
+    font-weight: 900;
+    color: var(--Dark-blue);
+}
+
+section.texto > article > p{
+    margin-top: 1em;
+    font-family: var(--font-500-700-900);
+    font-weight: 500;
+    color: var(--Desaturated-blue);
+    font-size: 15px;
+}
+
+
+section.plano{
+    display: flex;
+    margin: 1em 1em;
+    justify-content: flex-start;
+    background-color: var(--Very-pale-blue);
+    border: 2px solid var(--Very-pale-blue);
+}
+
+div#icone{
+    display: inline;
+    width: 25%;
+    margin: 0px 5px;
+    margin-top: 7px;
+}
+
+img{
+    width: 100%;
+}
+
+section.plano > div.itenstexto > div#chance{
+    text-align: right;
+    color: var(--Dark-blue);
+}
+
+div.itenstexto{
+    width:100%;
+    margin-top: 2px;
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+div.itenstexto > div.estilosiguais{
+    color: var(--Desaturated-blue);
+}
+
+div.itenstexto > div.estilosiguais{padding-top: 5px;margin-bottom: -5px;}
+
+span{
+    font-family: var(--font-500-700-900);
+    font-weight: 900;
+    font-size: 14px;
+    color: var(--Dark-blue);
+}
+
+
+div.itenstexto > div#preco{
+    margin-top: -12px;
+    font-family: var(--font-500-700-900);
+    font-weight: 700;
+    font-size: 14px;
+}
+
+div#chance > a{
+    color: var(--Bright-blue);
+    font-family: var(--font-500-700-900);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 2px;
+}
+
+section.compra{
+    margin: 1em 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.compra > div#botaoazul{
+    background-color: var(--Bright-blue);
+    width: 100%;
+    padding: .7em;
+    border-radius: .6em;
+    margin-bottom: .5em;
+    box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.332);
+}
+
+section.compra > div#botaoazul > button{
+    display: block;
+    margin: auto;
+    border: none;
+    color: white;
+    background-color: var(--Bright-blue);
+    font-family: var(--font-500-700-900);
+    font-weight: 900;
+}
+
+section.compra > div > a{
+    text-decoration: none;
+    font-family: var(--font-500-700-900);
+    font-weight: 900;
+    font-size: small;
+    color: hsl(222, 16%, 68%);
+    
+}

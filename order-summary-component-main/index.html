@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="estilos/mobile-first.css">
+  <link rel="stylesheet" href="estilos/media-query.css">
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -16,22 +17,41 @@
 </head>
 <body>
 
-  Order Summary
+  <div class="container">
+    <main>
+      <section class="imagem">
+        <!--imagem no css-->
+      </section>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+      <section class="texto">
+        <article>
+          <h2>Order Summary</h2>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any 
+            device anywhere you like!</p>
+        </article>
+      </section>
+      
+      <section class="plano">
+        <div id="icone"><!-- icone of songs --> <img src="images/icon-music.svg" alt="icone de musica"></div>
+         <div class="itenstexto">
+            <div class="estilosiguais" id="anual"><span>Annual Plan</span></div>
+            <div id="chance"><a href="#">Change</a></div>
+            <div class="estilosiguais" id="preco">$59.99/year</div>    
+        </div>   
+      </section>
 
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+      <section class="compra">
+        <div id="botaoazul">
+          <button>Proceed to Payment</button>
+        </div>
+        <div><a href="#">Cancel Order</a></div>
+      </section>
+    </main>
+  </div>
   
-  <div class="attribution">
+  <!--<div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Your Name Here</a>. -->
   </div>
 </body>
 </html>

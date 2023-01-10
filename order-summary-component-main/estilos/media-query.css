@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+/* Typical device Breakpoints 
+Pequenas telas:  max-width 600px
+Celular: min-width 600px
+Tablet: 768px até 992px
+Desktop: min-width: 992px até 1200px
+Grandes telas: min-width: 1200px 
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body,html{
+        background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg) no-repeat top center ;
+        background-size: contain;
+    }
+
+    main{
+        width: 330px;
+        height: 480px;
+    }
+
+    section.texto > article > h2:hover{
+        cursor: pointer;
+    }
+
+    section.compra > div#botaoazul:hover{
+        cursor: pointer;
+        background-color: hsl(224, 23%, 55%);
+    }
+
+    section.compra > div#botaoazul > button{
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+}
+
+@media screen and (min-width: 993px) {
+    body,html{
+        background: hsl(225, 100%, 94%) url(../images/pattern-background-desktop.svg) no-repeat top center;
+        background-size: contain;
+    }
+
+    main{
+        width: 330px;
+        height: 490px;
+    }
+
+    section.texto > article > h2:hover{
+        cursor: pointer;
+    }
+    
+    section.compra > div#botaoazul:hover{
+        cursor: pointer;
+        background-color: hsl(224, 23%, 55%);
+    }
+
+    section.compra > div#botaoazul > button{
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+}
