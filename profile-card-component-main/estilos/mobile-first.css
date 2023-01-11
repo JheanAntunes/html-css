@@ -1,0 +1,27 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{ margin: 0px; padding: 0px; box-sizing: border-box; font-size: 100%;}
+
+:root{
+    --Darkcyan: hsl(185, 75%, 39%);
+    --Verydark-desaturated-blue: hsl(229, 23%, 23%);
+    --Darkgrayish-blue: hsl(227, 10%, 46%);
+    --Darkgray: hsl(0, 0%, 59%);
+
+    --fonte-400-700: 'Kumbh Sans', sans-serif;
+}
+
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background: url("../images/bg-pattern-top.svg") 10% -50% no-repeat fixed, url("../images/bg-pattern-bottom.svg")right bottom no-repeat fixed;
+    background-size: cover;
+}
+
+
+main{
+    width: 320px;
+    height: 450px;
+}
+
