@@ -4,35 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/mobile-first.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
     <title>position</title>
     <style>
-        
-        *{
-            font-size: inherit;
-            margin: 0px;
-            padding: 0px;
-        }
-        
-        html,body{
-            height: 100%;
-            background-color: rgb(9, 87, 87);
-        }
-        
-        div.container{
-            height: 100%;
-            position: relative;
-            overflow: hidden;
-            
-        }
-
-       .bg-ballon-top{
-            position: absolute;     
-            top: -100%;
-            right: 65%;        
-        }   
-
-        .bg-ballon-bottom
-
     </style>
 </head>
 <body>
@@ -44,20 +19,32 @@
             <img src="images/bg-pattern-bottom.svg" alt="">
         </div>
 
-        <div class="relative"><p>
-            Victor Crest
-                26
-                London
-            
-                80K
-                Followers
-            
-                803K
-                Likes
-            
-                1.4K
-                Photos
-        </p></div>
+        <main class="conteudo">
+            <section>
+                    <div class="imagem"> <img src="images/bg-pattern-card.svg" alt="imagem do card"> </div>
+                    <div class="icone"></div>
+                    
+                        <div class="texto">
+                            <h2>Victor Crest&nbsp;<span>26</span></h2>
+                            <span>london</span>
+                        </div>
+                        <hr>
+                        <div class="seguidores">
+                            <ul>
+                                <li><h2>80K</h2></li>
+                                <li class="follow-like-photo">Followers</li>
+                            </ul>
+                            <ul>
+                                <li><h2>803K</h2></li>
+                                <li class="follow-like-photo">Likes</li>
+                            </ul>
+                            <ul>
+                                <li><h2>1.4K</h2></li>
+                                <li class="follow-like-photo">Photos</li>
+                            </ul>
+                        </div>
+            </section>
+        </main>
     </div>
 </body>
 </html>
